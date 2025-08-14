@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Splice</title>
+</head>
+<body>
+    <script>
+        //contoh1
+        let daftarTugas = ["Makan siang", "Rapat tim", "Beli buku", "Olahraga", "Tulis laporan"];
+        console.log("Daftar tugas awal:", daftarTugas);
+        let tugasDihapus = daftarTugas.splice("Jemput anak");
+        // console.log("Tugas yang dihapus:", tugasDihapus);
+        // console.log("Daftar tugas setelah perubahan:", daftarTugas);
+        console.log(tugasDihapus)
+        //contoh2
+        let bagianPohon = ["Batang", "Daun", "Ranting", "Buah"];
+        console.log("Daftar tugas awal:", bagianPohon);
+        let bagianDihapus = bagianPohon.splice(2, 2, "akar", "Bunga");
+        console.log("Tugas yang dihapus:", bagianDihapus);
+        console.log("Daftar tugas setelah perubahan:", bagianPohon);
+    </script>
+</body>
+</html>

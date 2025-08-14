@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Slice</title>
+</head>
+<body>
+    <script>
+        //contoh1
+        const daftarSiswa = ["Andi", "Budi", "Cindy", "Dedi", "Eka", "Fani"];
+        console.log("Daftar siswa asli:", daftarSiswa);
+        let kelompokA = daftarSiswa.slice(0, 3);
+        console.log("Kelompok A:", kelompokA);
+        console.log("Daftar siswa asli setelah membuat kelompok A:", daftarSiswa);
+        //contoh2
+        const jajanan = ["Seblak", "Bakso", "Cilok", "Mie Ayam", "Siomay",];
+        console.log("Daftar jajanan asli:", jajanan);
+        let beliJajanan = jajanan.slice(0, 3);
+        console.log("Jajanan yang di beli:", beliJajanan);
+        console.log("Daftar jajanan setelah jajanan di beli:", jajanan);
+    </script>
+</body>
+</html>

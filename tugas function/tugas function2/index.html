@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tombol untuk mengakses function</title>
+</head>
+<body>
+    <h1>Selamat pagiiii</h1>
+    <button onclick="tampilkanPesan()">klik untuk melihat pesan </button>
+    <p id="pesan"></p>
+    <script>
+        function tampilkanPesan() {
+            const elemenPesan = document.getElementById("pesan");
+            elemenPesan.innerHTML = ("Halo! kamu berhasil mengklik tombol")
+        }
+        console.log(tampilkanPesan)
+    </script>
+</body>
+</html>

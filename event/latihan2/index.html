@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #kotak {
+            width: 250px;
+            height: 250px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="kotak"></div>
+    <script>
+        const kotak = document.getElementById('kotak');
+        kotak.addEventListener('mouseover', function() {
+            kotak.style.backgroundColor = 'lightblue';
+        });
+        kotak.addEventListener('', function() {
+            kotak.style.backgroundColor = 'lightgray';
+        });
+    </script>   
+</body>
+</html>

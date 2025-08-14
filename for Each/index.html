@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar forEach</title>
+</head>
+<body>
+    <script>
+        //contoh1
+        const namaPengguna = ["Alice", "Bob", "Charlie", "David"];
+        console.log(" Daftar Nama Pengguna ");
+        namaPengguna.forEach(function(nama, index) {
+        console.log('Pengguna ke-' + (index + 1) + ' : ' + (nama));
+        })
+        //contoh2
+        const minumMinuman = ["Aqua", "Le Minerale", "Coca Cola", "Sprite"];
+        console.log(" Daftar Nama Minuman ");
+        minumMinuman.forEach(function(minum, index) {
+        console.log('Minuman ke-' + (index + 1) + ' : ' + (minum));
+        })
+    </script>
+</body>
+</html>

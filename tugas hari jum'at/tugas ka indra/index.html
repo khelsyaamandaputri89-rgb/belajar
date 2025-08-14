@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputan yang di bawahnya button celcius ke fahrenheit dan celcius ke reamur</title>
+</head>
+<body>
+    <b>Konversi suhu : </b><input type="number" id="inputSuhu" placeholder="masukan suhu dalam celcius"></br>
+    <br><button onclick="ubahCelciusKeFahrenheit()">ubah c => f</button><br>
+    <br><button onclick="ubahCelciusKeReamur()">ubah c => r</button></br>
+    <p id="hasil"></p>
+    <script>
+        function ubahCelciusKeFahrenheit() {
+            const c = document.getElementById("inputSuhu"). value;
+            const f = (c * (9/5)) + 32;
+            document.getElementById("hasil"). innerHTML = `${c}&deg;C = ${f.toFixed(2)}&deg;F`;
+        }
+        function ubahCelciusKeReamur() {
+            const c = document.getElementById("inputSuhu"). value;
+            const r = c * 4/5;
+            document.getElementById("hasil"). innerHTML = `${c}&deg;C = ${r.toFixed(2)}&deg;R`;
+        }
+            
+        
+    </script>
+</body>
+</html>

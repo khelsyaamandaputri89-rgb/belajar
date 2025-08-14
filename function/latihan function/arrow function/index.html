@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar arrow function</title>
+</head>
+<body>
+    <script>
+        //menambahkan dua angka
+        const tambah = (a, b) => a + b;
+        console.log(tambah(7, 10));
+        //mengalikan angka dengan diri sendiri
+        const kali = x => x * x;
+        console.log(kali(9));
+        //menguji genap ganjil
+        const cekGenapGanjil = (angka) => {
+        if (angka % 2 === 0) {
+          return 'Genap';
+        } else {
+          return 'Ganjil';
+        }
+        };
+        console.log(cekGenapGanjil(11));
+        console.log(cekGenapGanjil(16));
+        //mengembalikan objek
+        const buatObjek = (nama, umur) => ({nama, umur});
+        const orang = buatObjek('khelsya', 17);
+        console.log(orang);
+    </script>
+</body>
+</html>

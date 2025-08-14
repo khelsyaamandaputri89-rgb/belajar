@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membuat form input dari function dengan conditional</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="numberInput">Masukkan angka:</label>
+        <input type="number" id="numberInput" >
+        <button type="submit">Cek</button>
+    </form>
+   <i><b><p id="result" style="color: red; text-decoration: underline;"></p></b></i>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault()
+        const input = document.getElementById('numberInput').value;
+        const number = parseInt(input, 10);
+        const resultElement = document.getElementById('result');
+        if (number % 2 === 0) {
+        resultElement.textContent = `Angka ${number} adalah genap.`;
+        } else {
+        resultElement.textContent = `Angka ${number} adalah ganjil.`;
+        } 
+    });
+    </script>
+</body>
+</html>

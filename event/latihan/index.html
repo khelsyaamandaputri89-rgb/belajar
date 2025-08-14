@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan event</title>
+</head>
+<body>
+    <button id="tombol-klik" >Klik Saya!</button>
+    <p id="teks-info">Teks ini akan berubah.</p>
+    <script>
+        const tombol = document.getElementById('tombol-klik');
+        const teks = document.getElementById('teks-info');
+        tombol.addEventListener('mouseout', function() {
+            teks.innerHTML = 'Tombol sudah diklik!';           
+        });
+    </script>
+</body>
+</html>

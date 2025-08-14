@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Reduce</title>
+</head>
+<body>
+    <script>
+        //contoh1
+        const numbers = [1, 2, 3, 4, 5];
+        //memakai akumulator
+        const sumWithInitial = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log(sumWithInitial); 
+        //tidak memakai akumulator
+        const sumWithoutInitial = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+        console.log(sumWithoutInitial); 
+        //contoh2
+        const fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+        const fruitCount = fruits.reduce((accumulator, currentValue) => {
+        if (accumulator[currentValue]) {
+        accumulator[currentValue]++;
+        } else {
+        accumulator[currentValue] = 1;
+        }
+        return accumulator;
+        }, {}); 
+        console.log(fruitCount);
+    </script>
+</body>
+</html>
